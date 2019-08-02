@@ -6,26 +6,29 @@ img{
     border: 10px solid rgb(218, 96, 96);
 }
 .sidebar{
-    height: 665px;
     background: burlywood;
-    width: 250px;
+    width: 300PX;
+    min-height: 1000px;
 }
 .main{
     display: flex;
-    overflow-y: hidden;
+  
 }
 body{
     margin: 0px;
     padding: 0px;
+    overflow-y: hidden;
 }
 links{
     text-align: center;
-    
+    margin: 0px;
 }
 .link{
     list-style: none;
     color: aliceblue;
     text-align: center;
+    margin-left: 0px;
+    padding: 10PX 44PX 10PX 10PX;
 }
 .textcolor{
     color: brown;
@@ -44,11 +47,12 @@ p{
     font-size: 35px;
     margin: 15px;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     .main{
         display: flex;
         flex-direction: column;
         width: auto;
+        height: auto;
     }
     .content{
         text-align: left;
@@ -57,5 +61,7 @@ p{
     .sidebar{
         width: auto;
         text-align: center;
+        margin: 0px;
     }
+    
 }
